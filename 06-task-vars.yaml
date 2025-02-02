@@ -14,6 +14,6 @@
     
   - name: "print the varaibles"
     ansible.buitlin.debug:
-       msg: "Course is {{COURSE}}, duration is {{DURATION}}, Trainmee is {{TRAINEE}}"
+     msg: "Course is {{COURSE}}, duration is {{DURATION}}, Trainmee is {{TRAINEE}}"
 
     
