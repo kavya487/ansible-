@@ -5,8 +5,6 @@
     COURSE:    "Devops"
     DURATION: "1hr"
     TRAINEE: "Kavya"
-
-    
   tasks:
   - name: "print the variables"
     vars:
