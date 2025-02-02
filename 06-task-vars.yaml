@@ -11,7 +11,7 @@
     ansible.buitlin.debug:
       msg: "Course is {{COURSE}}, duration is {{DURATION}}, Trainmee is {{TRAINEE}}"
     
-  - name: print the variables:
+  - name: "rint the variables"
     ansible.buitlin.debug:
        msg: "Course is {{COURSE}}, duration is {{DURATION}}, Trainmee is {{TRAINEE}}"
 
