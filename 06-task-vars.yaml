@@ -2,9 +2,9 @@
   hosts: local
   connection: local
   vars:
-    COURSE:    "Devops"
-    DURATION: "1hr"
-    TRAINEE: "Kavya"
+     COURSE   : "Devops"
+    DURATION : "1hr"
+ TRAINEE  : "Kavya"
   tasks:
   - name: "print the variables"
     vars:
