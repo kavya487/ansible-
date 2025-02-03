@@ -1,0 +1,9 @@
+- name: "args "
+  hosts: web
+  connection: local
+  tasks:
+    - name: "print the vars with args"
+      ansible/builtin.debug
+        msg: "Course is {{COURSE}}, duration is {{DURATION}}, Trainmee is {{TRAINEE}}"
+
+    
