@@ -11,10 +11,10 @@
     private: false
   tasks:
   - name: "print vars"
-  vars:
-    GREET: "task"
-    ansible.builtin.debug:
-      msg: "Hello from {{GREET}}"
+    vars:
+      GREET: "TASK"
+      ansible.builtin.debug:
+       msg: "Hello from {{GREET}}"
   
 #   - name: variables
 #   hosts: local
