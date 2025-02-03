@@ -1,0 +1,6 @@
+- name: "print var invemtory" 
+  hosts: web 
+  tasks:
+  - name: "print course infoo"
+    ansible.builtin.debug:
+      msg : "course is {{COURSE}}  Duration is {{DURATION}} Trainee is {{TRAINEE}}"
