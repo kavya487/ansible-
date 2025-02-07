@@ -8,9 +8,9 @@
     instance_id: t3.micro
 
     instances:
-    - mysql:
-    - backend:
-    - frontend:
+    - mysql
+    - backend
+    - frontend
   tasks:
   - name: create ec2  instances
     amazon.aws.ec2_instance:
