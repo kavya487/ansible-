@@ -12,7 +12,7 @@
     - backend:
     - frontend:
   tasks:
-  - name: create instances
+  - name: create ec2  instances
     amazon.aws.ec2_instance:
       name: "{{ item }}"
       subnet_id: "{{ subnet_id }}"
