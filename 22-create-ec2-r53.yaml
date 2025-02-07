@@ -51,9 +51,6 @@
   #     wait: true
   #   loop: "{{ ec2_info.results }}"
 
-
-
-   
   - name: create private ip r53 records
     amazon.aws.route53:
       state: present
@@ -66,6 +63,19 @@
       overwrite: true
     loop: "{{ ec2_info.results }}"
 
+  
+  - name: create pubilc ip for front end
+    amazon.aws.route53:
+      state: present
+      zone: "{{ zone }}"
+      record: "{{ item.item}}.{{ zone }}"
+      type: A
+      ttl: 1
+      value: "{{ item.instances[0].public_ip_address }}"
+      wait: true
+      overwrite: true
+    loop: "{{ ec2_info.results }}"
+    when: item.item == "frontend"
 
 # - name: create ec2 and r53 records
 #   connection: local
