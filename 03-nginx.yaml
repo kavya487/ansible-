@@ -19,8 +19,4 @@
     ansible.builtin.package:
       name: git
       state: present
-  - name: start git
-    ansible.builtin.service:
-      name: git
-      state: started
-      enabled: yes
+  
