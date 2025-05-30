@@ -1,11 +1,8 @@
-- name: vars files"
+- name: vars with file
   hosts: local
-  connection: local
-  vars_files: 
+  vars:
   - vars.yaml
   tasks:
-  - name: "print course info "
+  - name: print ye vatrs
     ansible.builtin.debug:
-      msg: "Course is {{COURSE}}, duration is {{DURATION}}, Trainmee is {{TRAINEE}}"
-
-    
+      msg: "My name is {{ Name}} and my age is {{{ Age }}}"
