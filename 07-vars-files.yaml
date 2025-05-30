@@ -5,4 +5,4 @@
   tasks:
   - name: print ye vatrs
     ansible.builtin.debug:
-      msg: "My name is {{ Name}} and my age is {{{ Age }}}"
+      msg: "My name is {{ Name}} and my age is {{{ Age }}"
