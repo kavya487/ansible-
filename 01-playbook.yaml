@@ -1,5 +1,6 @@
-- name: PING 
+- name: ping the server
   hosts: web
-  tasks: 
-  - name: ping the server
+  tasks:
+  - name: connect to server
     ansible.builtin.ping:
+    msg: "logged into sever"
