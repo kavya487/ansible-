@@ -11,3 +11,16 @@
       name: nginx
       state: started
   
+- name: Install Git server
+  hosts: web
+  become: yes
+  tasks:
+  - name: install git
+    ansible.builtin.package:
+      name: git
+      state: present
+  - name: start git
+    ansible.builtin.service:
+      name: git
+      state: started
+      enabled: yes
