@@ -3,4 +3,4 @@
   tasks:
   - name: connect to server
     ansible.builtin.ping:
-     msg: "logged into sever"
+     
