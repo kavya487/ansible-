@@ -1,6 +1,6 @@
 - name: vars with file
   hosts: local
-  vars:
+  vars_files:
   - vars.yaml
   tasks:
   - name: print ye vatrs
