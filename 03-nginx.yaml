@@ -16,7 +16,7 @@
   become: yes
   tasks:
   - name: install git
-    ansible.builtin.package
+    ansible.builtin.package:
       name: git
       state: present
   
